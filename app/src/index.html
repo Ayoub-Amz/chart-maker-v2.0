@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a simple project to generate charts, using chartJs">
+        <meta name="autor" content="Ayoub Amzil">
+        <title>Chart maker v2.0</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/small.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/main.css">
+    </head> 
+    <body>
+        <div class="container">
+            <div class="chartContainer">
+                <canvas class="myChart"></canvas>
+            </div>
+            <div class="notes">
+                    <p><a href="https://ayoub-amz.github.io/chart-maker-v2.0/img/pic.png" target="_blank">How to?</a></p>
+                    <p>Note that :</p>
+                    <ul>
+                        <li>An empty data input means : 0</li>
+                        <li>Data input accepts only number.</li>
+                    </ul>
+                </div>
+            <div class="btns">
+                <button id="addNewChart">add new chart</button>
+                <button id="addLabels">add labels</button>
+                <button id="generate">generate</button>
+            </div>
+            <!-- --> 
+        </div>
+            <div id="options">       
+                <div class="labels">
+                    <p>Name :</p>
+                    <p>Type :</p>
+                    <p>Color :</p>
+                    <input class="labls" type="text" placeholder="lable">
+                    <input class="labls" type="text" placeholder="lable">
+                    <input class="labls" type="text" placeholder="lable">
+                </div>
+                <div class="charts">
+                    <input type="text" placeholder="name">
+                    <select>
+                        <option value="line">line</option>
+                        <option value="bar">bar</option>
+                    </select>
+                    <input type="color">
+                    <input class="dt" type="text" placeholder="data">
+                    <input class="dt" type="text" placeholder="data">
+                    <input class="dt" type="text" placeholder="data">
+                </div>
+                <div class="charts">
+                    <input type="text" placeholder="name">
+                    <select>
+                        <option value="line">line</option>
+                        <option value="bar">bar</option>
+                    </select>
+                    <input type="color">
+                    <input class="dt" type="text" placeholder="data">
+                    <input class="dt" type="text" placeholder="data">
+                    <input class="dt" type="text" placeholder="data">
+                </div>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+
